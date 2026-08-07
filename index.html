@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09090b" />
+    <meta
+      name="description"
+      content="WUPF — Detroit-rooted independent radio. Tune in, turn up, transcend."
+    />
+    <title>WUPF Radio — Tune In. Turn Up. Transcend.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="WUPF home">
+        <span class="brand-mark">WU<span>PF</span></span>
+        <span class="brand-kicker">Detroit Radio</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#listen">Listen</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#shows">Shows</a>
+        <a href="#about">About</a>
+      </nav>
+      <button class="header-live" type="button" data-play-trigger aria-label="Play WUPF live radio">
+        <span class="live-dot" aria-hidden="true"></span>
+        Listen live
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent sound / Detroit signal</p>
+          <h1 id="hero-title">WE UNITING<br />PEOPLES<br /><span>FREQUENCIES.</span></h1>
+          <p class="hero-deck">
+            Jazz, funk, soul, hip-hop and the sounds between the labels—broadcast with Detroit in the bloodstream.
+          </p>
+          <div class="hero-actions">
+            <button class="cta" type="button" data-play-trigger>
+              <span class="play-icon" aria-hidden="true">▶</span> Play WUPF
+            </button>
+            <a class="text-link" href="#schedule">See today's schedule <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+
+        <div class="tuner-card" aria-label="WUPF frequency display">
+          <div class="tuner-topline"><span>Motor City signal</span><span>24 / 7</span></div>
+          <div class="frequency" aria-hidden="true"><span>WU</span>PF</div>
+          <div class="dial" aria-hidden="true">
+            <div class="dial-ticks"></div>
+            <div class="dial-needle"></div>
+          </div>
+          <div class="tuner-footer"><span>DET</span><span>SOUL</span><span>JAZZ</span><span>FUNK</span><span>FUTURE</span></div>
+        </div>
+      </section>
+
+      <section class="on-air" id="listen" aria-labelledby="on-air-title">
+        <div>
+          <p class="section-label">On air now</p>
+          <h2 id="on-air-title">The WUPF Continuous Mix</h2>
+          <p id="current-track">Detroit frequencies, selected without borders.</p>
+        </div>
+        <div class="signal-bars" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="on-air-status"><span class="live-dot"></span> <span data-state-label>Ready</span></p>
+      </section>
+
+      <section class="schedule-section" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Programming</p>
+            <h2 id="schedule-title">THIS WEEK ON WUPF</h2>
+          </div>
+          <p>Seven days. One Detroit-rooted frequency. New voices beside deep cuts.</p>
+        </div>
+
+        <div class="day-tabs" role="tablist" aria-label="Schedule day">
+          <button type="button" role="tab" aria-selected="true" data-day="fri">Fri</button>
+          <button type="button" role="tab" aria-selected="false" data-day="sat">Sat</button>
+          <button type="button" role="tab" aria-selected="false" data-day="sun">Sun</button>
+          <button type="button" role="tab" aria-selected="false" data-day="mon">Mon</button>
+        </div>
+
+        <div class="schedule-list" id="schedule-list" aria-live="polite"></div>
+      </section>
+
+      <section class="shows-section" id="shows" aria-labelledby="shows-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Featured transmissions</p>
+            <h2 id="shows-title">FIND YOUR FREQUENCY</h2>
+          </div>
+          <p>Programming built like a record crate: history in the back, surprise up front.</p>
+        </div>
+
+        <div class="show-grid">
+          <article class="show-card card-purple">
+            <p>01 / Jazz</p>
+            <h3>AFTER HOURS</h3>
+            <span>Deep cuts after dark</span>
+          </article>
+          <article class="show-card card-orange">
+            <p>02 / Funk</p>
+            <h3>THE MOTHERSHIP</h3>
+            <span>Detroit funk & beyond</span>
+          </article>
+          <article class="show-card card-cyan">
+            <p>03 / Future</p>
+            <h3>NEXT WAVE</h3>
+            <span>New sound, no permission</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifesto" id="about" aria-labelledby="about-title">
+        <p class="section-label">Why WUPF</p>
+        <h2 id="about-title">TUNE IN.<br />TURN UP.<br /><span>TRANSCEND.</span></h2>
+        <p>
+          WUPF is a people-powered listening room: Detroit memory, global rhythm and the freedom to let a song finish its thought.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="brand-mark">WU<span>PF</span></div>
+      <p>We Uniting Peoples Frequencies.</p>
+      <p>Detroit, Michigan</p>
+    </footer>
+
+    <div class="player" data-player-state="idle" id="radio-player" aria-label="WUPF live player">
+      <audio id="live-audio" preload="none" data-stream-url=""></audio>
+      <button class="player-play" type="button" data-player-toggle aria-label="Play WUPF live radio">
+        <span data-play-symbol>▶</span>
+      </button>
+      <div class="player-copy">
+        <div class="player-meta"><span>WUPF LIVE</span><span data-state-label>Ready</span></div>
+        <strong>The WUPF Continuous Mix</strong>
+        <span class="player-note" data-player-note>Stream connection is ready for configuration.</span>
+      </div>
+      <div class="player-meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <label class="volume-control">
+        <span>VOL</span>
+        <input id="volume" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Volume" />
+      </label>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" hidden></div>
+    <script src="app.js"></script>
+  </body>
+</html>
